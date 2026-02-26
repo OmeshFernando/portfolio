@@ -3,6 +3,8 @@ import { motion } from 'motion/react';
 import { Button } from './ui/button';
 
 export function Hero() {
+  const resumeUrl = `${import.meta.env.BASE_URL}Omesh-Fernando.pdf`
+
   const scrollToProjects = () => {
     const element = document.getElementById('projects');
     if (element) {
@@ -11,7 +13,7 @@ export function Hero() {
   };
 
   const downloadResume = () => {
-    window.location.href = '/Omesh-Fernando.pdf';
+    window.location.href = resumeUrl
   };
 
   return (

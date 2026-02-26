@@ -4,6 +4,7 @@ import { Button } from './ui/button';
 import { useInView } from './hooks/useInView';
 
 export function Resume() {
+  const resumeUrl = `${import.meta.env.BASE_URL}Omesh-Fernando.pdf`
   const { ref, isInView } = useInView();
 
   return (
@@ -38,7 +39,7 @@ export function Resume() {
                 className="relative bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-6 text-lg border-0 overflow-hidden group"
                 asChild
               >
-                <a href="/Omesh-Fernando.pdf" download>
+                <a href={resumeUrl} download>
                   <span className="relative z-10 inline-flex items-center gap-2">
                     <Download size={20} />
                     Download Resume (PDF)
