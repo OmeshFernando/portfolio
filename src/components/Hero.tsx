@@ -34,7 +34,7 @@ export function Hero() {
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.5 }}
-                className="inline-block px-2 text-blue-100 drop-shadow-[0_0_22px_rgba(96,165,250,0.75)]"
+                className="inline-block px-2 text-white drop-shadow-[0_0_20px_rgba(147,197,253,0.75)]"
               >
                 Omesh Fernando
               </motion.span>
@@ -95,7 +95,7 @@ export function Hero() {
             {['Web Development', 'Full-Stack Development', 'UI/UX Design', 'Critical Thinking', 'Problem Solving'].map((skill) => (
               <span
                 key={skill}
-                className="px-4 py-2 rounded-full border border-blue-300/45 bg-white/10 backdrop-blur-md text-sm text-blue-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.22),0_0_18px_rgba(59,130,246,0.2)] hover:bg-white/15 hover:border-blue-200/70 transition-all duration-300"
+                className="px-5 py-2 rounded-full border-2 border-blue-300 bg-transparent text-base font-semibold text-white shadow-[0_0_10px_rgba(59,130,246,0.35)] hover:border-cyan-200 hover:shadow-[0_0_14px_rgba(34,211,238,0.45)] transition-all duration-300"
               >
                 {skill}
               </span>
@@ -157,6 +157,10 @@ export function Hero() {
     </section>
   );
 }
+
+
+
+
 
 
 
